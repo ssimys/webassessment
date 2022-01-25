@@ -1,0 +1,158 @@
+body {
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    color: #515151;
+    background-color: white;
+    text-align: center;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*
+h1 - 30pt , h2 -28pt ,h3-26 pt , h4-24pt , h5-22 pt 
+
+*/
+
+h1{
+      font-size:  30pt;
+
+      }
+
+h2{
+    font-size:  28pt;
+   
+   }
+   h3{
+    font-size:  26pt;
+   
+   }
+   h4{
+    font-size:  24pt;
+   
+   }
+   h5{
+    font-size:  22pt;
+   
+   }
+header {
+    display: flex ;
+}
+.logo{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.desktop {
+ display: flex;
+ width: 100% ;
+ justify-content: flex-end;
+}
+
+/*
+
+ Links :
+  all padding = 15px
+  remove underline from the link
+*/
+.desktop >a {
+  padding: 64px;
+  text-decoration: none;
+
+}
+
+.mobile {
+
+  display: none;
+
+
+}
+
+
+/*
+ Section 1
+ bg color = grey
+ image - width  = 60%
+ padding - top & bottom = 30 px , left & right = 20 px
+*/
+
+.section1{
+ display: flex;
+ background-color: grey;
+ padding: 30px 20px;
+
+}
+
+.section1 > img {
+width : 60% ;
+
+}
+/* Section 1 content 
+left padding = 25px
+align the text to center
+
+*/
+.section1{
+  padding-left:25px ;
+  align-self: center;
+}
+
+.section1-content > a{
+background-color: #3a3535;
+color: #ffff;
+text-decoration: none;
+font-weight: bold;
+width: 50%;
+display: block;
+text-align: center;
+padding: 12px;
+margin-top: 410px;
+
+}
+.section1-content > a:hover{
+ background-color: darkgreen;
+
+}
+
+@media only screen and (max-width : 720px ){
+   .desktop, .logo{
+     display : none ;
+   }
+
+    .mobile {
+       display: flex;
+       width : 100% ;
+       justify-content: column;
+       margin-top: 10px;
+       
+    }
+
+
+  .section1 {
+       flex-direction: column;
+
+  }
+.section1 > img {
+      width : 100%;
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
